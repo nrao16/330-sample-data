@@ -2,7 +2,7 @@
 
 ## Week 2 Lecture
 
-`$ mongoimport --db=week2 --collection=users users.json`
+`$ mongoimport --db=week2 --collection=users week2/users.json`
 
 ## Week 3 Lecture
 
