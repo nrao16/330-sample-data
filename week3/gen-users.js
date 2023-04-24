@@ -26,7 +26,7 @@ MongoClient.connect(url, function(err, client) {
   const db = client.db(dbName);
 	for (let i = 0; i < 200000; i++) {
 		const numTransactions = _.random(0, 20);
-		db.collection('users').insert({
+		db.collection('users').insertOne({
 			name: `User ${_.random(1, 100)} ${i}`,
 			userId: String(i),
 			settings: {
